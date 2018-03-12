@@ -29,6 +29,17 @@
         <url>https://github.com/Xellitix/commons-net</url>
     </scm>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/com.xellitix.commons/net -->
+            <dependency>
+                <groupId>com.xellitix.commons</groupId>
+                <artifactId>net</artifactId>
+                <version>0.2.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <!-- Core dependencies -->
         <!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
@@ -41,6 +52,11 @@
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-assistedinject</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xellitix.commons</groupId>
+            <artifactId>net</artifactId>
         </dependency>
 
         <!-- Test dependencies -->
