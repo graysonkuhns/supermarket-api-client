@@ -1,7 +1,6 @@
 package com.xellitix.chef.cookbook;
 
 import com.xellitix.commons.semver.SemanticVersion;
-
 import java.io.Serializable;
 
 /**
@@ -19,7 +18,7 @@ public interface Cookbook extends Serializable {
   String getName();
 
   /**
-   *  Gets the version.
+   * Gets the version.
    *
    * @return The version.
    */

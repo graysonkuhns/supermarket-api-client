@@ -1,7 +1,6 @@
 package com.xellitix.chef.supermarket;
 
 import com.google.inject.assistedinject.Assisted;
-
 import java.net.URI;
 import javax.inject.Inject;
 

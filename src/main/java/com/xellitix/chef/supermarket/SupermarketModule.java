@@ -17,7 +17,7 @@ public class SupermarketModule extends AbstractModule {
   protected void configure() {
     // Supermarket factory
     install(new FactoryModuleBuilder()
-      .implement(Supermarket.class, DefaultSupermarket.class)
-      .build(SupermarketFactory.class));
+        .implement(Supermarket.class, DefaultSupermarket.class)
+        .build(SupermarketFactory.class));
   }
 }

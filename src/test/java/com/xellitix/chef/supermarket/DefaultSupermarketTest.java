@@ -1,11 +1,10 @@
 package com.xellitix.chef.supermarket;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.net.URI;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * {@link DefaultSupermarket} test case.

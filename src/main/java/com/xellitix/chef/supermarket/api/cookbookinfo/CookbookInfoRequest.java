@@ -1,7 +1,7 @@
 package com.xellitix.chef.supermarket.api.cookbookinfo;
 
-import java.io.Serializable;
 import com.xellitix.chef.cookbook.Cookbook;
+import java.io.Serializable;
 
 /**
  * {@link Cookbook} information request.

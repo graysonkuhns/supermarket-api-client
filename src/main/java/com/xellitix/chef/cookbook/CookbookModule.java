@@ -17,7 +17,7 @@ public class CookbookModule extends AbstractModule {
   protected void configure() {
     // Cookbook factory
     install(new FactoryModuleBuilder()
-      .implement(Cookbook.class, DefaultCookbook.class)
-      .build(CookbookFactory.class));
+        .implement(Cookbook.class, DefaultCookbook.class)
+        .build(CookbookFactory.class));
   }
 }

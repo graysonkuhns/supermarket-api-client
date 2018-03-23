@@ -1,11 +1,11 @@
 package com.xellitix.chef.cookbook;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
+
 import com.xellitix.commons.semver.SemanticVersion;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
 
 /**
  * {@link DefaultCookbook} test case.
