@@ -1,5 +1,6 @@
-package com.xellitix.chef.supermarket.api.request.cookbookinfo;
+package com.xellitix.chef.supermarket.api.cookbookinfo;
 
+import com.xellitix.chef.supermarket.api.cookbookinfo.DefaultCookbookInfoRequest;
 import org.junit.Before;
 import org.junit.Test;
 

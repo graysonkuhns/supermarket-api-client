@@ -1,4 +1,4 @@
-package com.xellitix.chef.supermarket.api.request.cookbookinfo;
+package com.xellitix.chef.supermarket.api.cookbookinfo;
 
 /**
  * {@link CookbookInfoRequest} factory.

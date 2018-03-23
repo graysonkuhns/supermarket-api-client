@@ -1,4 +1,4 @@
-package com.xellitix.chef.supermarket.api.request.cookbookinfo;
+package com.xellitix.chef.supermarket.api.cookbookinfo;
 
 import java.io.Serializable;
 import com.xellitix.chef.cookbook.Cookbook;
