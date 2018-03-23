@@ -22,7 +22,7 @@ public class DefaultCookbookTest {
   private DefaultCookbook cookbook;
 
   @Test
-  public void getNameTest() {
+  public void getName__Test() {
     assertThat(cookbook
         .getName())
         .isNotNull()
@@ -30,7 +30,7 @@ public class DefaultCookbookTest {
   }
 
   @Test
-  public void getVersionTest() {
+  public void getVersion__Test() {
     assertThat(cookbook
         .getVersion())
         .isNotNull()

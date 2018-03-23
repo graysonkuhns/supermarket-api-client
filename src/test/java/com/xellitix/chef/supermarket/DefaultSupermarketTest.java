@@ -23,7 +23,7 @@ public class DefaultSupermarketTest {
   private DefaultSupermarket supermarket;
 
   @Test
-  public void getEndpointTest() {
+  public void getEndpoint__Test() {
     assertThat(supermarket
         .getEndpoint())
         .isNotNull()
@@ -31,7 +31,7 @@ public class DefaultSupermarketTest {
   }
 
   @Test
-  public void getApiEndpointTest() {
+  public void getApiEndpoint__Test() {
     URI apiEndpoint = supermarket.getApiEndpoint(ApiVersion.v1);
 
     assertThat(apiEndpoint)
