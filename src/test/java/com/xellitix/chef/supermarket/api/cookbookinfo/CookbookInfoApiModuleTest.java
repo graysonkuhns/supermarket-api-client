@@ -18,4 +18,9 @@ public class CookbookInfoApiModuleTest {
   public void provision__CookbookInfoRequestFactory__Test() {
     injector.getInstance(CookbookInfoRequestFactory.class);
   }
+
+  @Test
+  public void provision__CookbookInfoResponseFactory__Test() {
+    injector.getInstance(CookbookInfoResponseFactory.class);
+  }
 }

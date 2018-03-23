@@ -22,5 +22,10 @@ public class CookbookInfoApiModule extends AbstractModule {
     install(new FactoryModuleBuilder()
       .implement(CookbookInfoRequest.class, DefaultCookbookInfoRequest.class)
       .build(CookbookInfoRequestFactory.class));
+
+    // CookbookInfoResponse factory
+    install(new FactoryModuleBuilder()
+      .implement(CookbookInfoResponse.class, DefaultCookbookInfoResponse.class)
+      .build(CookbookInfoResponseFactory.class));
   }
 }
