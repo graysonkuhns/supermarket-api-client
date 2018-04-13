@@ -14,24 +14,15 @@ import org.junit.Test;
 public class DefaultSupermarketTest {
 
   // Constants
-  private static final String ENDPOINT = "https://supermarket.chef.io";
   private static final String API_ENDPOINT = "https://supermarket.chef.io/api/v1";
 
   // Fixtures
-  private URI endpoint;
+  private URI apiEndpoint;
   private DefaultSupermarket supermarket;
 
   @Test
-  public void getEndpoint__Test() {
-    assertThat(supermarket
-        .getEndpoint())
-        .isNotNull()
-        .isEqualTo(endpoint);
-  }
-
-  @Test
   public void getApiEndpoint__Test() {
-    URI apiEndpoint = supermarket.getApiEndpoint(ApiVersion.v1);
+    URI apiEndpoint = supermarket.getApiEndpoint();
 
     assertThat(apiEndpoint)
         .isNotNull();
@@ -42,10 +33,10 @@ public class DefaultSupermarketTest {
 
   @Before
   public void setUp() throws Exception {
-    // Create the endpoint
-    endpoint = new URI(ENDPOINT);
+    // Create the apiEndpoint
+    apiEndpoint = new URI(API_ENDPOINT);
 
     // Create the supermarket
-    supermarket = new DefaultSupermarket(endpoint);
+    supermarket = new DefaultSupermarket(apiEndpoint);
   }
 }

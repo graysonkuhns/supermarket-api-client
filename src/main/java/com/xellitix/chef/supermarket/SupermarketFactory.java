@@ -12,8 +12,8 @@ public interface SupermarketFactory {
   /**
    * Creates a {@link Supermarket}.
    *
-   * @param endpoint The endpoint.
+   * @param apiEndpoint The API endpoint.
    * @return The {@link Supermarket}.
    */
-  Supermarket create(URI endpoint);
+  Supermarket create(URI apiEndpoint);
 }

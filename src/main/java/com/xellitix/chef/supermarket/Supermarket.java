@@ -11,17 +11,9 @@ import java.net.URI;
 public interface Supermarket extends Serializable {
 
   /**
-   * Gets the endpoint.
-   *
-   * @return The endpoint.
-   */
-  URI getEndpoint();
-
-  /**
    * Gets the API endpoint.
    *
-   * @param apiVersion The {@link ApiVersion}.
    * @return The API endpoint.
    */
-  URI getApiEndpoint(ApiVersion apiVersion);
+  URI getApiEndpoint();
 }

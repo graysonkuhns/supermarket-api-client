@@ -12,37 +12,25 @@ import javax.inject.Inject;
 public class DefaultSupermarket implements Supermarket {
 
   // Properties
-  private final URI endpoint;
+  private final URI apiEndpoint;
 
   /**
    * Constructor.
    *
-   * @param endpoint The endpoint.
+   * @param apiEndpoint The API endpoint.
    */
   @Inject
-  DefaultSupermarket(@Assisted final URI endpoint) {
-    this.endpoint = endpoint;
-  }
-
-  /**
-   * Gets the endpoint.
-   *
-   * @return The endpoint.
-   */
-  @Override
-  public URI getEndpoint() {
-    return endpoint;
+  DefaultSupermarket(@Assisted final URI apiEndpoint) {
+    this.apiEndpoint = apiEndpoint;
   }
 
   /**
    * Gets the API endpoint.
    *
-   * @param apiVersion The {@link ApiVersion}.
    * @return The API endpoint.
    */
   @Override
-  public URI getApiEndpoint(final ApiVersion apiVersion) {
-    final String apiPath = String.format("/api/%s", apiVersion.toString());
-    return endpoint.resolve(apiPath);
+  public URI getApiEndpoint() {
+    return apiEndpoint;
   }
 }
