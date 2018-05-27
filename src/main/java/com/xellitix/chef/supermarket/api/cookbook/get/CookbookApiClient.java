@@ -1,13 +1,14 @@
-package com.xellitix.chef.supermarket.api.cookbooks;
+package com.xellitix.chef.supermarket.api.cookbook.get;
 
 import com.xellitix.chef.supermarket.Supermarket;
+import com.xellitix.chef.cookbook.Cookbook;
 
 /**
- * Cookbooks API client.
+ * {@link Cookbook} API client.
  *
  * @author Grayson Kuhns
  */
-public interface CookbooksApiClient {
+public interface CookbookApiClient {
 
   /**
    * Executes a {@link GetCookbookRequest}.

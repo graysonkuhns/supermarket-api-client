@@ -1,15 +1,14 @@
-package com.xellitix.chef.supermarket.api.cookbooks;
+package com.xellitix.chef.supermarket.api.cookbook.get;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
-import com.xellitix.chef.cookbook.Cookbook;
 
 /**
  * Cookbooks API Google Guice module.
  *
  * @author Grayson Kuhns
  */
-public class CookbooksApiModule extends AbstractModule {
+public class CookbookApiModule extends AbstractModule {
 
   /**
    * Configures the module.

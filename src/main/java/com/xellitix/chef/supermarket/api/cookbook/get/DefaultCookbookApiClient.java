@@ -1,4 +1,4 @@
-package com.xellitix.chef.supermarket.api.cookbooks;
+package com.xellitix.chef.supermarket.api.cookbook.get;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,11 +12,11 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
 /**
- * Default {@link CookbooksApiClient}.
+ * Default {@link CookbookApiClient}.
  *
  * @author Grayson Kuhns
  */
-public class DefaultCookbooksApiClient implements CookbooksApiClient {
+public class DefaultCookbookApiClient implements CookbookApiClient {
 
   // JSON Keys
   private static final String KEY_NAME = "name";
@@ -32,7 +32,7 @@ public class DefaultCookbooksApiClient implements CookbooksApiClient {
    * @param responseFactory The {@link GetCookbookResponseFactory}.
    */
   @Inject
-  DefaultCookbooksApiClient(final GetCookbookResponseFactory responseFactory) {
+  DefaultCookbookApiClient(final GetCookbookResponseFactory responseFactory) {
     this.responseFactory = responseFactory;
   }
 

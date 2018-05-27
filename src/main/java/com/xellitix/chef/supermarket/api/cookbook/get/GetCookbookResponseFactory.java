@@ -1,4 +1,4 @@
-package com.xellitix.chef.supermarket.api.cookbooks;
+package com.xellitix.chef.supermarket.api.cookbook.get;
 
 import com.google.inject.assistedinject.Assisted;
 import com.xellitix.chef.cookbook.Cookbook;
