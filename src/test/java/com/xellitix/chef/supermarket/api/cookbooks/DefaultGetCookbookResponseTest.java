@@ -1,4 +1,4 @@
-package com.xellitix.chef.supermarket.api.cookbookinfo;
+package com.xellitix.chef.supermarket.api.cookbooks;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -6,11 +6,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * {@link DefaultCookbookInfoResponse} test case.
+ * {@link DefaultGetCookbookResponse} test case.
  *
  * @author Grayson Kuhns
  */
-public class DefaultCookbookInfoResponseTest {
+public class DefaultGetCookbookResponseTest {
 
   // Constants
   private static final String NAME = "name";
@@ -18,7 +18,7 @@ public class DefaultCookbookInfoResponseTest {
   private static final String DESCRIPTION = "description";
 
   // Fixtures
-  private DefaultCookbookInfoResponse response;
+  private DefaultGetCookbookResponse response;
 
   @Test
   public void getName__Test() {
@@ -46,7 +46,7 @@ public class DefaultCookbookInfoResponseTest {
 
   @Before
   public void setUp() {
-    response = new DefaultCookbookInfoResponse(
+    response = new DefaultGetCookbookResponse(
         NAME,
         MAINTAINER,
         DESCRIPTION);

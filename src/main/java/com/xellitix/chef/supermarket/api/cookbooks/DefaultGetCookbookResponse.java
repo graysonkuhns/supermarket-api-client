@@ -1,15 +1,15 @@
-package com.xellitix.chef.supermarket.api.cookbookinfo;
+package com.xellitix.chef.supermarket.api.cookbooks;
 
 import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
 import com.xellitix.chef.cookbook.Cookbook;
 
 /**
- * Default {@link CookbookInfoResponse} implementation.
+ * Default {@link GetCookbookResponse} implementation.
  *
  * @author Grayson Kuhns
  */
-public class DefaultCookbookInfoResponse implements CookbookInfoResponse {
+public class DefaultGetCookbookResponse implements GetCookbookResponse {
 
   // Properties
   private final String name;
@@ -24,7 +24,7 @@ public class DefaultCookbookInfoResponse implements CookbookInfoResponse {
    * @param description The {@link Cookbook} description.
    */
   @Inject
-  DefaultCookbookInfoResponse(
+  DefaultGetCookbookResponse(
       @Assisted("name") final String name,
       @Assisted("maintainer") final String maintainer,
       @Assisted("description") final String description) {

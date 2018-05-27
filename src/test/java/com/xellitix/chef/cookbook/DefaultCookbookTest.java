@@ -15,7 +15,7 @@ import org.junit.Test;
 public class DefaultCookbookTest {
 
   // Constants
-  private static final String NAME = "cookbook";
+  private static final String NAME = "cookbooks";
 
   // Fixtures
   private SemanticVersion version;
@@ -42,7 +42,7 @@ public class DefaultCookbookTest {
     // Version mocking
     version = mock(SemanticVersion.class);
 
-    // Create the cookbook
+    // Create the cookbooks
     cookbook = new DefaultCookbook(NAME, version);
   }
 }

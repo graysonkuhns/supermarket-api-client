@@ -1,24 +1,24 @@
-package com.xellitix.chef.supermarket.api.cookbookinfo;
+package com.xellitix.chef.supermarket.api.cookbooks;
 
 import com.google.inject.assistedinject.Assisted;
 import com.xellitix.chef.cookbook.Cookbook;
 
 /**
- * {@link CookbookInfoResponse} factory.
+ * {@link GetCookbookResponse} factory.
  *
  * @author Grayson Kuhns
  */
-public interface CookbookInfoResponseFactory {
+public interface GetCookbookResponseFactory {
 
   /**
-   * Creates a {@link CookbookInfoResponse}.
+   * Creates a {@link GetCookbookResponse}.
    *
    * @param name The {@link Cookbook} name.
    * @param maintainer The {@link Cookbook} maintainer.
    * @param description The {@link Cookbook} description.
-   * @return The {@link CookbookInfoResponse}.
+   * @return The {@link GetCookbookResponse}.
    */
-  CookbookInfoResponse create(
+  GetCookbookResponse create(
       @Assisted("name") final String name,
       @Assisted("maintainer") final String maintainer,
       @Assisted("description") final String description);

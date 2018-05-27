@@ -1,14 +1,14 @@
-package com.xellitix.chef.supermarket.api.cookbookinfo;
+package com.xellitix.chef.supermarket.api.cookbooks;
 
 import com.xellitix.chef.cookbook.Cookbook;
 import java.io.Serializable;
 
 /**
- * {@link Cookbook} information request.
+ * Get {@link Cookbook} request.
  *
  * @author Grayson Kuhns
  */
-public interface CookbookInfoRequest extends Serializable {
+public interface GetCookbookRequest extends Serializable {
 
   /**
    * Gets the cookbook name.
