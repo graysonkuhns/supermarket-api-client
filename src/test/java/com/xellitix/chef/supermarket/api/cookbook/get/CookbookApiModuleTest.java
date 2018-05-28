@@ -15,12 +15,17 @@ public class CookbookApiModuleTest {
   private final Injector injector = Guice.createInjector(new CookbookApiModule());
 
   @Test
-  public void provision__CookbookInfoRequestFactory__Test() {
+  public void provision__GetCookbookRequestFactory__Test() {
     injector.getInstance(GetCookbookRequestFactory.class);
   }
 
   @Test
-  public void provision__CookbookInfoResponseFactory__Test() {
+  public void provision__GetCookbookResponseFactory__Test() {
     injector.getInstance(GetCookbookResponseFactory.class);
+  }
+
+  @Test
+  public void provision__GetCookbookResponseParser__Test() {
+    injector.getInstance(GetCookbookResponseParser.class);
   }
 }

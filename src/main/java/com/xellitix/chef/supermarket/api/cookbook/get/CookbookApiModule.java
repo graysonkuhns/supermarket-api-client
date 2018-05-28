@@ -26,5 +26,8 @@ public class CookbookApiModule extends AbstractModule {
     install(new FactoryModuleBuilder()
         .implement(GetCookbookResponse.class, DefaultGetCookbookResponse.class)
         .build(GetCookbookResponseFactory.class));
+
+    // GetCookbookResponse parser
+    bind(GetCookbookResponseParser.class).to(DefaultGetCookbookResponseParser.class);
   }
 }
