@@ -18,22 +18,12 @@ import org.apache.http.impl.client.HttpClients;
  */
 public class DefaultCookbookApiClient implements CookbookApiClient {
 
-  // JSON Keys
-  private static final String KEY_NAME = "name";
-  private static final String KEY_MAINTAINER = "maintainer";
-  private static final String KEY_DESCRIPTION = "description";
-
   // Dependencies
-  private final GetCookbookResponseFactory responseFactory;
+  private final GetCookbookResponseParser getCookbookResponseParser;
 
-  /**
-   * Constructor.
-   *
-   * @param responseFactory The {@link GetCookbookResponseFactory}.
-   */
   @Inject
-  DefaultCookbookApiClient(final GetCookbookResponseFactory responseFactory) {
-    this.responseFactory = responseFactory;
+  DefaultCookbookApiClient(final GetCookbookResponseParser getCookbookResponseParser) {
+    this.getCookbookResponseParser = getCookbookResponseParser;
   }
 
   /**
@@ -45,8 +35,8 @@ public class DefaultCookbookApiClient implements CookbookApiClient {
    */
   @Override
   public GetCookbookResponse execute(final GetCookbookRequest request, final Supermarket supermarket) {
-    JsonNode cookbookInfo = requestCookbookInfo(request.getCookbookName(), supermarket);
-    return parseCookbookInfoResponse(cookbookInfo);
+    JsonNode responseData = requestCookbookInfo(request.getCookbookName(), supermarket);
+    return getCookbookResponseParser.parse(responseData);
   }
 
   private JsonNode requestCookbookInfo(final String cookbookName, final Supermarket supermarket) {
@@ -77,13 +67,5 @@ public class DefaultCookbookApiClient implements CookbookApiClient {
     } catch (IOException ex) {
       throw new RuntimeException(ex);
     }
-  }
-
-  private GetCookbookResponse parseCookbookInfoResponse(JsonNode response) {
-    String name = response.asText(KEY_NAME);
-    String maintainer = response.asText(KEY_MAINTAINER);
-    String description = response.asText(KEY_DESCRIPTION);
-
-    return responseFactory.create(name, maintainer, description);
   }
 }
