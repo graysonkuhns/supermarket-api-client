@@ -8,7 +8,7 @@ import com.google.inject.assistedinject.FactoryModuleBuilder;
  *
  * @author Grayson Kuhns
  */
-public class CookbookApiModule extends AbstractModule {
+public class GetCookbookApiModule extends AbstractModule {
 
   /**
    * Configures the module.

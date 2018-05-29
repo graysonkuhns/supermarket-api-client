@@ -12,17 +12,17 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
 /**
- * Default {@link CookbookApiClient}.
+ * Default {@link GetCookbookApiClient}.
  *
  * @author Grayson Kuhns
  */
-public class DefaultCookbookApiClient implements CookbookApiClient {
+public class DefaultGetCookbookApiClient implements GetCookbookApiClient {
 
   // Dependencies
   private final GetCookbookResponseParser getCookbookResponseParser;
 
   @Inject
-  DefaultCookbookApiClient(final GetCookbookResponseParser getCookbookResponseParser) {
+  DefaultGetCookbookApiClient(final GetCookbookResponseParser getCookbookResponseParser) {
     this.getCookbookResponseParser = getCookbookResponseParser;
   }
 

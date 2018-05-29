@@ -5,14 +5,14 @@ import com.google.inject.Injector;
 import org.junit.Test;
 
 /**
- * {@link CookbookApiModule} test case.
+ * {@link GetCookbookApiModule} test case.
  *
  * @author Grayson Kuhns
  */
-public class CookbookApiModuleTest {
+public class GetCookbookApiModuleTest {
 
   // Fixtures
-  private final Injector injector = Guice.createInjector(new CookbookApiModule());
+  private final Injector injector = Guice.createInjector(new GetCookbookApiModule());
 
   @Test
   public void provision__GetCookbookRequestFactory__Test() {

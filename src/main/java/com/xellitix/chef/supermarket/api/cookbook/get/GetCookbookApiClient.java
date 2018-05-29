@@ -4,11 +4,11 @@ import com.xellitix.chef.supermarket.Supermarket;
 import com.xellitix.chef.cookbook.Cookbook;
 
 /**
- * {@link Cookbook} API client.
+ * Get {@link Cookbook} API client.
  *
  * @author Grayson Kuhns
  */
-public interface CookbookApiClient {
+public interface GetCookbookApiClient {
 
   /**
    * Executes a {@link GetCookbookRequest}.
